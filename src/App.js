@@ -1,7 +1,12 @@
+import React from "react"
+import { BrowserRouter as Router,
+  Switch, NavLink} from "react-router-dom"
+import PDF from "./PDF"
 import './App.css';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <header className="App-header">
     <h1> Hi I'm Deep Prajapati a Science Minded Tech Enthusiast</h1>
@@ -29,8 +34,13 @@ function App() {
         >
           linkedIn
         </a>
+        <div className = "Pdf-viewer">
+        <NavLink to="/src/PDF.js" > Resume </NavLink>
+      </div>
       </header>
+
     </div>
+    </Router>
   );
 }
 
